@@ -1,0 +1,15 @@
+.row {
+   max-width: $grid-width;
+   margin: 0 auto;
+
+   &:not(:last-child) {
+      //zaznacza wszystko poza last child
+      margin-bottom: $row-margin;
+   }
+
+   .col1,
+   .col2 {
+      width: calc((100% - #{$row-margin}) / 2);
+      float: left;
+   }
+}
